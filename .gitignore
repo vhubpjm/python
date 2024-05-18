@@ -1,0 +1,14 @@
+def factorial_function(n):
+    if n < 0 :
+       return ValueError
+    if n == 0 or n == 1 :
+       return 1
+    else :
+        fact = 1
+        while (n>1):
+            fact *= n
+            n -= 1
+        return fact
+
+n = int(input("enter the number: "))
+print ("factorial of given number is", factorial_function(n))
